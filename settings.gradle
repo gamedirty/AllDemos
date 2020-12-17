@@ -1,0 +1,8 @@
+include ':shadow'
+include ':kotlin_reflect'
+include ':refadapter'
+include ':drawaview'
+include ':tablayout'
+include ':cliptest'
+include ':app'
+rootProject.name = "AllDemos"

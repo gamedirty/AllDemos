@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:elevation="0dp"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:layout_collapseMode="pin" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="0dp"
+                android:paddingTop="10dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#FF347BFB"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabMaxWidth="0dp"
+                app:tabPaddingEnd="28dp"
+                app:tabPaddingStart="28dp"
+                app:tabPaddingTop="0dp"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextAppearance="@style/tab_text_appearance"
+                app:tabTextColor="#FF9DA6B7">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是哈哈" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你是谁啊" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <View style="@style/horizontal_line" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <Space
+        android:id="@+id/searchAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/headAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/searchAnchor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchAnchor" />
+
+    <TextView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/design_default_color_error"
+        android:gravity="center"
+        android:text="请输入钥匙名称"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/searchAnchor"
+        app:layout_constraintLeft_toRightOf="@id/back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchAnchor"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/bigTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:includeFontPadding="false"
+        android:text="大标题"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@id/headAnchor"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/littleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="小标题"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchAnchor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchAnchor" />
+
+
+    <ImageView
+        android:id="@+id/littleSearch"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchAnchor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchAnchor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
