@@ -5,6 +5,7 @@
       <module name="AllDemos.app" target="1.8" />
       <module name="AllDemos.cliptest" target="1.8" />
       <module name="AllDemos.drawaview" target="1.8" />
+      <module name="AllDemos.recyclerviewdemo" target="1.8" />
       <module name="AllDemos.refadapter" target="1.8" />
       <module name="AllDemos.shadow" target="1.8" />
       <module name="AllDemos.tablayout" target="1.8" />
