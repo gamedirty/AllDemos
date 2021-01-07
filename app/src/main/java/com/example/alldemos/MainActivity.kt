@@ -1,6 +1,5 @@
 package com.example.alldemos
 
-import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import android.graphics.Color
 import android.os.Build

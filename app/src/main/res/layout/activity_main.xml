@@ -8,117 +8,137 @@
 
 
     <Button
-        android:layout_width="wrap_content"
         android:id="@+id/change"
-        android:text="变化"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="变化" />
 
 
     <View
-        android:layout_width="100dp"
         android:id="@+id/panel"
-        android:background="#ff0000"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="right"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="40dp"
-        android:layout_height="100dp"/>
+        android:background="#ff0000" />
 
 
     <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/seekbar"
-        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp" />
 
 
     <androidx.appcompat.widget.AppCompatSeekBar
         android:id="@+id/seekbar2"
-        android:layout_marginTop="300dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp" />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="我是哈哈哈" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="end" />
+
+    </LinearLayout>
 
 
     <ScrollView
         android:id="@+id/list"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="#00ffff"
         app:behavior_peekHeight="180dp"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        android:layout_height="match_parent">
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="我就是哈哈"
+                android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:text="我就是哈哈" />
         </LinearLayout>
     </ScrollView>
 
