@@ -1,3 +1,6 @@
+include ':bottomsheetdialog'
+include ':datepicker'
+include ':viewanimation'
 include ':listpopup'
 include ':recyclerviewdemo'
 include ':shadow'

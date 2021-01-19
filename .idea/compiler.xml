@@ -3,13 +3,16 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="AllDemos.app" target="1.8" />
+      <module name="AllDemos.bottomsheetdialog" target="1.8" />
       <module name="AllDemos.cliptest" target="1.8" />
+      <module name="AllDemos.datepicker" target="1.8" />
       <module name="AllDemos.drawaview" target="1.8" />
       <module name="AllDemos.listpopup" target="1.8" />
       <module name="AllDemos.recyclerviewdemo" target="1.8" />
       <module name="AllDemos.refadapter" target="1.8" />
       <module name="AllDemos.shadow" target="1.8" />
       <module name="AllDemos.tablayout" target="1.8" />
+      <module name="AllDemos.viewanimation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

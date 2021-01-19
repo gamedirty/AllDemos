@@ -13,7 +13,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bottomsheetdialog" />
             <option value="$PROJECT_DIR$/cliptest" />
+            <option value="$PROJECT_DIR$/datepicker" />
             <option value="$PROJECT_DIR$/drawaview" />
             <option value="$PROJECT_DIR$/kotlin_reflect" />
             <option value="$PROJECT_DIR$/listpopup" />
@@ -21,6 +23,7 @@
             <option value="$PROJECT_DIR$/refadapter" />
             <option value="$PROJECT_DIR$/shadow" />
             <option value="$PROJECT_DIR$/tablayout" />
+            <option value="$PROJECT_DIR$/viewanimation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
