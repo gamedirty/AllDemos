@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:onClick="showDialog"
+            android:text="showdialog" />
+        <com.example.datepicker.picker.datepicker.DatePickerView
+            android:id="@+id/date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <View
-            android:background="#000000"
+        <com.example.datepicker.picker.timepicker.TimePickerView
             android:layout_width="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_height="1dp"/>
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/date1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TimePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

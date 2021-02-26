@@ -1,3 +1,6 @@
+include ':startupdemo'
+include ':dpidrawable'
+include ':customdialog'
 include ':bottomsheetdialog'
 include ':datepicker'
 include ':viewanimation'

@@ -28,6 +28,7 @@ open class PickerRecyclerView @JvmOverloads constructor(
     init {
         setAttrs()
         resetLayoutManager()
+        isNestedScrollingEnabled = false
     }
 
     private fun setAttrs() {
@@ -135,10 +136,6 @@ open class PickerRecyclerView @JvmOverloads constructor(
         }
     }
 
-    /**
-     *
-     */
-
     fun addOnSelectedItemListener(listener: OnItemSelectedListener) {
         layoutManager.addOnItemSelectedListener(listener)
     }
@@ -158,4 +155,24 @@ open class PickerRecyclerView @JvmOverloads constructor(
         layoutManager.removeOnItemFillListener(listener)
     }
 
+
+    /**
+     * 滚动到最后一个item
+     */
+    fun scrollToEnd() {
+        if (adapter == null) return
+        this.post {
+            this.scrollToPosition(adapter!!.itemCount - 1)
+        }
+    }
+
+    /**
+     * 平滑的滚动到最后一个item
+     */
+    fun smoothScrollToEnd() {
+        if (adapter == null) return
+        this.post {
+            this.scrollToPosition(adapter!!.itemCount - 1)
+        }
+    }
 }
